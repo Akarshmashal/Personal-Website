@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3367917730.js" crossorigin="anonymous"></script>
+    
+   
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="Images/logo.png" class="logo"></a>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer and Software Tester</p>
+                <h1>Hi,I'am <span>Akarsh Mashal </span><br> From Vijayapur</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/computer.png">
+                </div>
+                <div class="about-col-2">
+                    <p>Java Developer and QA Engineer with expertise in manual and automation testing. Skilled in
+                        developing robust solutions using Java, Collection Framework, JDBC, Hibernate, Selenium, SQL,
+                        and front-end technologies like HTML, CSS, and JavaScript. Certified in Java Full Stack
+                        Development and Software Testing. Proficient in Agile, SDLC, defect tracking, and test case
+                        creation.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('courses')">Course</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Developer</span><br>Java<br>Collection Framework <br>Jdbc <br>Hibernate
+                                <br>SQl <br>Html, Css, Javscript
+                            </li>
+                            <li><span>Software Testing</span><br>Automtion Testing <br>Manual Testing <br>Selenium
+                                <br>TestNG
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017-2022</span><br>BLDEA's V P Dr PG Halakatti College of Engineering &
+                                Technology</li>
+                            <li><span>2016-2017</span><br>R.K.M PU College, Bijapur – Department of Pre-University
+                                Education</li>
+                            <li><span>2014-2015</span><br>P.D.J High School – Karnataka School Education and Examination
+                                Board</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Academic Project</span><br>Multiple Object Detection Using YOLO <br>By looking at
+                                the photos and videos, one can instantly and easily find and identify the objec they are
+                                interested in. Passing this intelligence to a computer is nothing more than recognizing
+                                an object, that is, identifying an object.
+                                <br>
+                                Object detection has been found to be used in a variety of areas such as video
+                                surveillance, image retrieval systems, self-driving cars, and many others. There are
+                                many algorithms that can be used to detect objects, but for now we will focus on the
+                                YOLO V3 algorithm. YOLO is an abbreviation for "You Only Look Once".
+                                <br>
+                                The YOLO model is very accurate and can recognize objects that reside in the frame.To
+                                detect an object, these systems take a classifier for that object and evaluate it at
+                                various locations and scales in an exceedingly very test image. Systems like deformable
+                                parts models use a window approach where the classifier is run at evenly spaced
+                                locations over the entire image. More recent approaches like R-CNN use region proposal
+                                methods to first generate potential bounding boxes during a picture then run a
+                                classifier on these proposed boxes.
+                            </li>
+                            <li><span>Intrenship pProject</span><br>Apartment Visitor Management System <br>
+                                Apartment Visitor Management system is a web-based technology that will revolutionize
+                                the way your society manages visitors. Visitor Management system is more important to
+                                security guards or security society.
+                                <br>
+                                This web application provides a way to effectively control record & track society
+                                visitor traffic. In AVMS we use PHP and MySQL database. This is the project which keeps
+                                records of visitors who visited in the Society.
+                                <br>
+                                Dashboard:- In this section, admin can briefly view how many visitors visited in a
+                                particular period.
+                                <br>
+                                Visitors:- In this section, admin adds new visitors by filling their information in add
+                                visitors sections and also view and manage visitor’s records. Admin also put visitors
+                                out time in the manage records section.
+                                <br>
+                                Search:- In this bar, admin can search a particular person by their name and phone
+                                number.
+                                <br>
+                                Reports:- In this section admin can generate visitor’s reports between two dates. Admin
+                                can also update his profile, change password and recover password.
+                            </li>
+                            <li><span>Automation Testing Project</span><br>Automated testing of an e-commerce website
+                                using Selenium, Java, and TestNG covered user authentication, product search, cart
+                                functionality, checkout, order placement, and UI responsiveness.</li>
+                            <li><span>Manual Testing Project</span><br>Conducted manual testing to validate features
+                                such as user registration, chat
+                                functionalities, group creation, media sharing, notifications, and security protocols.
+                                <br>Identified and reported usability issues and bugs to ensure a secure, user-friendly
+                                experience across different devices and operating systems.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="courses">
+                        <ul>
+                            <li><span>Jspiders</span><br>Java Fullstack</li>
+                            <li><span>Pentagon Space</span><br>Software Testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Mywork------------------------ -->
+
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/linkedinlogo.webp">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/akarsh-mashal-168674246/" target="_blank"><i
+                                class="fa-brands fa-staylinked"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/github.jpeg">
+                    <div class="layer">
+                        <h3>Projects</h3>
+                        <p>Github</p>
+                        <a href="https://github.com/Akarshmashal?tab=repositories" target="_blank">
+                            <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+    <br><br>
+
+    <!-- -------------------contact------------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <a href="Akarsh.pdf" target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy | All Rights Reversed 2025
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+     <script src="opentab.js"></script>
+     <script src="sidemenu.js"></script>
+     <script src="googlesheet.jss"></script>
+</body>
+
+</html>
