@@ -117,13 +117,12 @@ nav ul li a:hover::after {
 }
 
 .tab-links {
-    margin-right: 50px;
+    margin-right: 50px ;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
-
 .tab-links::after {
     content: '';
     width: 0;
@@ -313,7 +312,7 @@ nav .fa-solid {
 #msg {
     color: #e21a59;
     margin-top: -40px;
-    me
+    
     display: block;
 }
 
